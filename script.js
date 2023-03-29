@@ -66,7 +66,7 @@ let c = ""
 console.log(c)
 
 if (args[0] == "sum"){
-    c = soma(a,b)
+    c = sum(a,b)
 }else if(args[0] == "mult"){
     c = mult(a,b)
 }else if(args[0] == "div"){
@@ -77,7 +77,7 @@ if (args[0] == "sum"){
     c = "Operação Invalida"
 }
 
-function soma(x,y){
+function sum(x,y){
     return x + y
 }
 
@@ -195,3 +195,21 @@ fs2.readFile(fileName, "UTF8", (error, data) =>{
         console.log("Arquivo gerado com sucesso")
     } )
 })
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////         PACOTES          //////////////////////////////////////////////////
+
+//Pacotes é o conjunto de 1 ou mais modulos
+//pegamos varios modulos juntamos tudo e damos um nome, isso é um pacote
+//quando criamos um pacote, podemos utilizar esse codigo que a gente criou em outros programas, 
+//basta instalar esse pacote no nosso programa.
+//Esse pacote pode ser um pacote que a gente criou ou pode ser de outra pessoa.
+//quando uma pessoa disponibiliza um pacote nos não precisamos saber qual algoritmo ela usou pra resolver o problema,
+//mas sim qual problema esse pacote resolve , e como chamamos a função que resolve o tal problema
+
+const operacoesBasicas = require("./operacoesBasicas")
+const areas = require("./areas")
+
+module.exports = {...operacoesBasicas, ...areas}
