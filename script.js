@@ -213,3 +213,23 @@ const operacoesBasicas = require("./operacoesBasicas")
 const areas = require("./areas")
 
 module.exports = {...operacoesBasicas, ...areas}
+
+//tenho os arquivos areas.js e operacoesBasicas.js e quero transformalas em pacote.
+//quando instalamos o nodeJS instalamos tambem o NPM (Node Package Manager, ou Gerenciador de Pacotes do Node)
+// atraves dele fica muito facil de criar ou instalar um pacote
+
+//Para criar um pacote, na tela do node digitar = npm init
+//vai criar um arquivo package.json
+//esse arquivo json tem um objeto json que vai definir todas as caracteristicas do pacote
+// a 1 pergunta vai pedir qual nome escolher para o pacote
+//a 2 é a versao
+//3 descrição
+//4 entry point ///// IMPORTANTE //// entry point é o arquivo onde estou juntando tudo, ou o arquivo principal
+//5 test comand
+//6 git repository
+//7 keywords
+//8 autor 
+//9 licensa
+
+//para instalar um pacote,  na tela do node digitar = npm install
+//parei o video nos 6:30
