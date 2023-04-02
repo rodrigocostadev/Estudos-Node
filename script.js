@@ -218,6 +218,10 @@ fs2.readFile(fileName, "UTF8", (error, data) =>{
 //quando instalamos o nodeJS instalamos tambem o NPM (Node Package Manager, ou Gerenciador de Pacotes do Node)
 // atraves dele fica muito facil de criar ou instalar um pacote
 
+
+
+
+
 //Para criar um pacote, na tela do node digitar = npm init
 //vai criar um arquivo package.json
 //esse arquivo json tem um objeto json que vai definir todas as caracteristicas do pacote
@@ -271,3 +275,15 @@ fs2.readFile(fileName, "UTF8", (error, data) =>{
 
         // let calc = require("mat")
         // console.log(calc.areaQuadrado(5))
+
+
+
+
+
+//explicando o funcionamento de um pacote: nao é preciso saber como os pacotes resolvem os problemas, só é preciso saber
+//quais ferramentas ele me oferece pra eu poder utilizar, então so preciso saber como utilizar e não como o algoritmo
+//funciona. isso é otimo pois não é preciso recriar algo ou reinventar a roda
+
+
+//se por acaso eu apagar o pacote, é só instalar ele novamente que ele retorna ao seu estado original, e 
+// reinstala todas as suas dependencias do projeto
