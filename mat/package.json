@@ -1,12 +1,8 @@
 {
-  "name": "meu-programa",
+  "name": "mat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "mat": "^1.0.0"
-  },
-  "devDependencies": {},
+  "main": "pacotes.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

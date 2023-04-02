@@ -209,10 +209,10 @@ fs2.readFile(fileName, "UTF8", (error, data) =>{
 //quando uma pessoa disponibiliza um pacote nos não precisamos saber qual algoritmo ela usou pra resolver o problema,
 //mas sim qual problema esse pacote resolve , e como chamamos a função que resolve o tal problema
 
-const operacoesBasicas = require("./operacoesBasicas")
-const areas = require("./areas")
+// const operacoesBasicas = require("./operacoesBasicas")
+// const areas = require("./areas")
 
-module.exports = {...operacoesBasicas, ...areas}
+// module.exports = {...operacoesBasicas, ...areas}
 
 //tenho os arquivos areas.js e operacoesBasicas.js e quero transformalas em pacote.
 //quando instalamos o nodeJS instalamos tambem o NPM (Node Package Manager, ou Gerenciador de Pacotes do Node)
@@ -231,5 +231,43 @@ module.exports = {...operacoesBasicas, ...areas}
 //8 autor 
 //9 licensa
 
+
+
+
 //para instalar um pacote,  na tela do node digitar = npm install
-//parei o video nos 6:30
+//IMPORTANTE: para instalar um pacote é necessario que ja exista algum pacote criado, para depois instalar outro pacote
+//então: 1 criar pacote, 2 instalar pacote
+//na tela do node, instalar pacote, use as aspas para referenciar a pasta do pacote a ser instalado
+//veja o exemplo: npm install "C:\Users\Rodrigo\Desktop\Programador BR\Estudos-Node\mat"
+//no pacote novo que voce criou, depois de fazer npm install, verificar as dependencias pra garantir que o pacote foi instalado
+//sempre que voce instalar um pacote seu mesmo ou de outro dev, ele vai instalar dentro da pasta node_modules, 
+//e vai colocar como dependencia no arquivo package.json
+
+//no arquivo index.js foi escrito o seguinte codigo:
+        // let calc = require("mat")
+        // console.log(calc)
+//
+
+//no node, ir para o diretorio C:\Users\Rodrigo\Desktop\Programador BR\Estudos-Node\meu programa que é onde
+//esta o programa raiz, o que está recebendo o novo pacote instalado e digitar = node index.js
+// logo vai aparecer todos os metodos ( da minha variavel calc / do novo pacote instalado )
+
+        // C:\Users\Rodrigo\Desktop\Programador BR\Estudos-Node\meu programa (main -> origin) (meu-programa@1.0.0)
+        // λ node index.js
+        // {
+        //   soma: [Function: soma],
+        //   subtracao: [Function: subtracao],
+        //   divisao: [Function: divisao],
+        //   multiplicacao: [Function: multiplicacao],
+        //   areaQuadrado: [Function: quadrado],
+        //   areaRetangulo: [Function: retangulo],
+        //   areaTriangulo: [Function: triangulo],
+        //   areaCirculo: [Function: circulo]
+        // }
+
+//então para calcular a area de um quadrado por exemplo, basta adicionar o metodo do pacote na variavel calc 
+//como a area do quadrado é lado vezes lado, e essa formula esta descrita no arquivo areas.js, basta colocar o valor 
+//do lado do quadrado entre parenteses. ex:
+
+        // let calc = require("mat")
+        // console.log(calc.areaQuadrado(5))
