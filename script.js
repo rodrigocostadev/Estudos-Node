@@ -201,6 +201,10 @@ fs2.readFile(fileName, "UTF8", (error, data) =>{
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////         PACOTES          //////////////////////////////////////////////////
 
+//os arquivos na qual se situam essa aula são:
+//1 pasta mat: pacotes.js / areas.js / operacoesBasicas.js
+//2 pasta meu programa: index.js
+
 //Pacotes é o conjunto de 1 ou mais modulos
 //pegamos varios modulos juntamos tudo e damos um nome, isso é um pacote
 //quando criamos um pacote, podemos utilizar esse codigo que a gente criou em outros programas, 
@@ -287,3 +291,63 @@ fs2.readFile(fileName, "UTF8", (error, data) =>{
 
 //se por acaso eu apagar o pacote, é só instalar ele novamente que ele retorna ao seu estado original, e 
 // reinstala todas as suas dependencias do projeto
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////  REDIMENSIONANDO UMA IMAGEM //////////////////////////////////////////////////
+
+//os arquivos na qual se situam essa aula são:
+//1 pasta imageeditor: arquivo app.js / + demais pastas e aquivos
+
+//No arquivo app.js foi criado 2 variaveis, path e width, path é o caminho do arquivo e width a largura.
+//process.argv pega a informação da linha de comando
+//let path = process.argv[2] 
+// let width = Number(process.argv[3])
+
+
+
+//com essas "informações" prontas, vamos redimensionar a imagem. mas digamos como eu redimensiono uma imagem?
+//vamos procurar no google.
+//atraves da busca por : (resize image node) encontramos o primeiro link descrito como lovell/sharp
+//o sharp é um pacote de redimensionamento de imagens disponivel na internet. 
+//Clicando nele, ele vai me mandar pro repositorio do github, e no github vai ter o site da documentação.
+//é importante olhar a documentação para poder chamar certas funçoes, nomes de objetos e outros tipos de coisas desse tipo
+//para instalar o sharp, digitar no terminal do node:  npm install sharp 
+
+
+
+//daqui em diante é bom acompanhar simultaneamente o arquivo app.js
+
+//SHARP:
+//dentro da função resize, chamamos o sharp e entre parenteses colocamos o path que é o endereço do meu arquivo.
+//entao fica: sharp(path)
+
+//RESIZE:
+//e como se modifica o tamanho usando sharp? utilizando o metodo descrito na documentação: resize()
+//o resize vai esperar um argumento, esse argumento pode ser um objeto que tem largura e altura, 
+//mas nos vamos utilizar somente a largura.
+
+//TOFILE:
+//agora o que falta é dizer o que fazer com o arquivo, para isso existo o metodo toFile()
+//esse metodo vai ser utilizado para onde vou querer salvar essa saida, 
+//onde vou gravar isso depois que fizer a alteração no tamanho da imagem.
+//tofile recebe 2 argumentos, veja o exemplo:
+//toFile("./temp/output.jpg")     "esse é o 1 argumento"
+//temp é o endereço/pasta a ser salvo, output.jpg é o nome do arquivo redimensionado que eu quero salvar.
+//o 2 argumento é uma função, que vai tratar se tem erro ou não, e vai me trazer uma mensagem se foi bem sucedido ou não
+
+// para redimensionar a imagem, digitar no terminal do node:
+//node, app.js, nome da imagem a ser redimensionada, tamanho desejado.
+//ex:
+//node app.js image.jpg 600
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////  COMPRIMINDO UMA IMAGEM //////////////////////////////////////////////////
+
+
