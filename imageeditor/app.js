@@ -118,4 +118,4 @@ resize( path, './temp/output_resize.jpg', width)
 
 
 /////////////////////////       NAO ESTA COMPRIMINDO A IMAGEM   //////////////////////////////////////////////////
-// teste 123456
+// teste 12345678
