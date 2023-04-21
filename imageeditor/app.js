@@ -117,5 +117,10 @@ resize( path, './temp/output_resize.jpg', width)
 //node app.js image.jpg 600
 
 
-/////////////////////////       NAO ESTA COMPRIMINDO A IMAGEM   //////////////////////////////////////////////////
-// teste 12345678
+////////  NAO ESTA COMPRIMINDO A IMAGEM   /////////////
+
+
+
+
+
+
