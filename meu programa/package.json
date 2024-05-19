@@ -174,7 +174,7 @@
     "resolve-dir": "^0.1.1",
     "safe-buffer": "^5.2.1",
     "safer-buffer": "^2.1.2",
-    "semver": "^7.3.8",
+    "semver": "^7.5.2",
     "sequencify": "^0.0.7",
     "setprototypeof": "^1.2.0",
     "sshpk": "^1.17.0",
