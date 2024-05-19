@@ -72,7 +72,7 @@
     "get-stdin": "^4.0.1",
     "getpass": "^0.1.7",
     "glob-base": "^0.3.0",
-    "glob-parent": "^2.0.0",
+    "glob-parent": "^5.1.2",
     "global-modules": "^0.2.3",
     "global-prefix": "^0.1.5",
     "graceful-fs": "^4.2.11",
