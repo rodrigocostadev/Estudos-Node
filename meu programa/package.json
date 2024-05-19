@@ -20,7 +20,7 @@
     "aws-sign2": "^0.7.0",
     "aws4": "^1.12.0",
     "bcrypt-pbkdf": "^1.0.2",
-    "braces": "^1.8.5",
+    "braces": "^2.3.1",
     "bytes": "^3.1.2",
     "cache-content-type": "^1.0.1",
     "caseless": "^0.12.0",
